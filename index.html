@@ -17,41 +17,28 @@
     .conteudo img {margin: auto; display: block; } 
     .conteudo {text-align: justify; margin: auto; min-width: 300px; max-width: 1000px;}
     mark {background-color: darkgrey; }
-     /* Estilos para telas pequenas (móveis) */
-@media only screen and (max-width: 768px) {
-  /* Alterar a largura de elementos para 100% */
-  .container {
-    width: 100%;
-  }
-  /* Alterar a disposição de elementos para bloco */
-  .menu {
-    display: block;
-  }
-  /* Alterar o tamanho da fonte */
-  body {
-    font-size: 16px;
-  }
+     @media screen and (min-width:468px) {
+body {
+     font-size: 16px;
+     margin: auto;
+ }
 }
-
-/* Estilos para telas médias (tablets) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Alterar a largura de elementos para 80% */
-  .container {
-    width: 80%;
-  }
-}
-
-/* Estilos para telas grandes (desktops) */
-@media only screen and (min-width: 1025px) {
-  /* Retornar a largura padrão para os elementos */
-  .container {
-    width: 900px;
-  }
-  /* Alterar a disposição de elementos para flexbox */
-  .menu {
-    display: flex;
-  }
-}
+ 
+ /* Breakpoint para tablets (a partir de 768px) */
+ @media screen and (min-width: 768px) {
+     body {
+         font-size: 18px;
+         margin: auto;
+     }
+ }
+ 
+ /* Breakpoint para desktops (a partir de 1024px) */
+ @media screen and (min-width: 1024px) {
+     body {
+         font-size: 20px;
+         margin: auto;
+     }
+ }
 
          
     </style>
